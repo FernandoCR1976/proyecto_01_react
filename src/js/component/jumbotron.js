@@ -2,7 +2,7 @@ import React from "react";
 
 //create header
 
-export function Jubotron() {
+export function Jumbotron() {
 	return (
 		<div className="jumbotron">
 			<h1 className="display-4">Hello, world!</h1>

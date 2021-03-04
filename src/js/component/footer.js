@@ -1,11 +1,9 @@
 import React from "react";
 
-//create footer
-
 export function Footer() {
 	return (
-		<div className="footer bd-dark">
-			<p>Hecho with love by "herrumbre"</p>
+		<div className="footer bg-dark mt-5">
+			<p>Hecho with love by herrumbre</p>
 		</div>
 	);
 }

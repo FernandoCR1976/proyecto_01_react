@@ -4,10 +4,10 @@ import React from "react";
 import { Navbar } from "./component/navbar.js";
 import { Jumbotron } from "./component/jumbotron.js";
 import { Cards } from "./component/cards.js";
-import { Footer } from "./component/footer.js";
+import { Footer } from "./component/footer";
 
 const carta = {
-	image: "/workspace/react-hello/src/img/rigo-baby.jpg",
+	image: "http://placehold.it/500x325.jpg",
 	alt: "rigo",
 	title: "Hello Rigo",
 	description: "loesks kjsskkskkskkss",
@@ -37,8 +37,8 @@ export function App() {
 						<Cards card={carta} />
 					</div>
 				</div>
-				<Footer />
 			</div>
+			<Footer />
 		</div>
 	);
 }

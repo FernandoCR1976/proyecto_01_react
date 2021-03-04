@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export function Cards(props) {
 	return (
 		<div className="col">
-			<div className="card" style={{ width: "" }}>
+			<div className="card">
 				<img
 					src={props.card.image}
 					className="card-img-top"
