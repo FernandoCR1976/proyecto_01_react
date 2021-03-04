@@ -1,22 +1,21 @@
-//import react into the bundle
 import React from "react";
 
 //import your own components
+import { Navbar } from "./component/navbar.js";
+import { Jumbotron } from "./component/jumbotron.js";
+import { Cards } from "./component/cards.js";
+import { Footer } from "./component/footer.js";
 
-import { Navbar } from "./component/navbar";
-import { Jumbotron } from "./component/Jumbotron";
-import { Card } from "./component/cards";
-
-const tarjeta = {
-	image: "",
+const carta = {
+	image: "/workspace/react-hello/src/img/rigo-baby.jpg",
 	alt: "rigo",
-	title: "Hello",
-	description: "lorem",
+	title: "Hello Rigo",
+	description: "loesks kjsskkskkskkss",
 	url: "http://wikipedia.com",
-    buttom: "click Hre"
+	button: "click here"
 };
 
-//create layout
+//crear Layout esqueleto
 export function App() {
 	return (
 		<div className="text-center">
@@ -24,7 +23,21 @@ export function App() {
 
 			<div className="container">
 				<Jumbotron />
-				<Cards card={tarjeta} />
+				<div className="row">
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+				</div>
+				<Footer />
 			</div>
 		</div>
 	);
